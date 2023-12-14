@@ -1,3 +1,3 @@
-# 20 python projects
+# 10 python projects
 
 
