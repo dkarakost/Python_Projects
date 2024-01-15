@@ -1,16 +1,16 @@
 #we declare a 2D list
-triliza = [
+tictactoe = [
 [" ", " ", " "],
 [" ", " ", " "],
 [" ", " ", " "]
 ]
 #Desing the output of the board
 print("_______")
-print("|" + triliza[0][0] + "|" + triliza[0][1] + "|" + triliza[0][2] + "|")
+print("|" + tictactoe[0][0] + "|" + tictactoe[0][1] + "|" + tictactoe[0][2] + "|")
 print("+-+-+-+")
-print("|" + triliza[1][0] + "|" + triliza[1][1] + "|" + triliza[1][2] + "|")
+print("|" + tictactoe[1][0] + "|" + tictactoe[1][1] + "|" + tictactoe[1][2] + "|")
 print("+-+-+-+")
-print("|" + triliza[2][0] + "|" + triliza[2][1] + "|" + triliza[2][2] + "|")
+print("|" + tictactoe[2][0] + "|" + tictactoe[2][1] + "|" + tictactoe[2][2] + "|")
 print("-------")
 
 times = 0
@@ -45,41 +45,41 @@ while times < 9:
     elif player1 == 9 :
         row = 2 
         column = 2
-    if triliza[row][column] == " ":
-        triliza[row][column] = "O"
+    if tictactoe[row][column] == " ":
+        tictactoe[row][column] = "O"
         print("_______")
-        print("|" + triliza[0][0] + "|" + triliza[0][1] + "|" + triliza[0][2] + "|")
+        print("|" + tictactoe[0][0] + "|" + tictactoe[0][1] + "|" + tictactoe[0][2] + "|")
         print("+-+-+-+")
-        print("|" + triliza[1][0] + "|" + triliza[1][1] + "|" + triliza[1][2] + "|")
+        print("|" + tictactoe[1][0] + "|" + tictactoe[1][1] + "|" + tictactoe[1][2] + "|")
         print("+-+-+-+")
-        print("|" + triliza[2][0] + "|" + triliza[2][1] + "|" + triliza[2][2] + "|")
+        print("|" + tictactoe[2][0] + "|" + tictactoe[2][1] + "|" + tictactoe[2][2] + "|")
         print("-------")
         
-        if triliza[0][0] == "O" and triliza[0][1] == "O" and triliza[0][2] == "O":
+        if tictactoe[0][0] == "O" and tictactoe[0][1] == "O" and tictactoe[0][2] == "O":
             print("Player 1 has won!")
             quit()
-        elif triliza[1][0] == "O" and triliza[1][1] == "O" and triliza[1][2] == "O":
+        elif tictactoe[1][0] == "O" and tictactoe[1][1] == "O" and tictactoe[1][2] == "O":
             print("Player 1 has won!")
             quit()
-        elif triliza[2][0] == "O" and triliza[2][1] == "O" and triliza[2][2] == "O":
+        elif tictactoe[2][0] == "O" and tictactoe[2][1] == "O" and tictactoe[2][2] == "O":
             print("Player 1 has won!")
             quit()
-        elif triliza[0][0] == "O" and triliza[1][0] == "O" and triliza[2][0] == "O":
+        elif tictactoe[0][0] == "O" and tictactoe[1][0] == "O" and tictactoe[2][0] == "O":
             print("Player 1 has won!")
             quit()
-        elif triliza[0][1] == "O" and triliza[1][1] == "O" and triliza[1][2] == "O":
+        elif tictactoe[0][1] == "O" and tictactoe[1][1] == "O" and tictactoe[1][2] == "O":
             print("Player 1 has won!")
             quit()
-        elif triliza[0][2] == "O" and triliza[2][1] == "O" and triliza[2][2] == "O":
+        elif tictactoe[0][2] == "O" and tictactoe[2][1] == "O" and tictactoe[2][2] == "O":
             print("Player 1 has won!")
             quit()
-        elif triliza[0][0] == "O" and triliza[1][1] == "O" and triliza[2][2] == "O":
+        elif tictactoe[0][0] == "O" and tictactoe[1][1] == "O" and tictactoe[2][2] == "O":
             print("Player 1 has won!")
             quit()
-        elif triliza[0][2] == "O" and triliza[1][1] == "O" and triliza[2][0] == "O":
+        elif tictactoe[0][2] == "O" and tictactoe[1][1] == "O" and tictactoe[2][0] == "O":
             print("Player 1 has won!")
             quit()
-    elif triliza[row][column] != " ":
+    elif tictactoe[row][column] != " ":
         print("Try a different one!")
         times -= 1
         continue
@@ -116,43 +116,43 @@ while times < 9:
             row = 2
             column = 2
             
-        if triliza[row][column] ==" ":
-            triliza[row][column] ="X"
+        if tictactoe[row][column] ==" ":
+            tictactoe[row][column] ="X"
             
             print("_______")
-            print("|" + triliza[0][0] + "|" + triliza[0][1] + "|" + triliza[0][2] + "|")
+            print("|" + tictactoe[0][0] + "|" + tictactoe[0][1] + "|" + tictactoe[0][2] + "|")
             print("+-+-+-+")
-            print("|" + triliza[1][0] + "|" + triliza[1][1] + "|" + triliza[1][2] + "|")
+            print("|" + tictactoe[1][0] + "|" + tictactoe[1][1] + "|" + tictactoe[1][2] + "|")
             print("+-+-+-+")
-            print("|" + triliza[2][0] + "|" + triliza[2][1] + "|" + triliza[2][2] + "|")
+            print("|" + tictactoe[2][0] + "|" + tictactoe[2][1] + "|" + tictactoe[2][2] + "|")
             print("-------")
             
-            if triliza[0][0] == "X" and triliza[0][1] == "X" and triliza[0][2] == "X":
+            if tictactoe[0][0] == "X" and tictactoe[0][1] == "X" and tictactoe[0][2] == "X":
                 print("Player 2 has won!")
                 quit()
-            elif triliza[1][0] == "X" and triliza[1][1] == "X" and triliza[1][2] == "X":
+            elif tictactoe[1][0] == "X" and tictactoe[1][1] == "X" and tictactoe[1][2] == "X":
                 print("Player 2 has won!")
                 quit()
-            elif triliza[2][0] == "X" and triliza[2][1] == "X" and triliza[2][2] == "X":
+            elif tictactoe[2][0] == "X" and tictactoe[2][1] == "X" and tictactoe[2][2] == "X":
                 print("Player 2 has won!")
                 quit()
-            elif triliza[0][0] == "X" and triliza[1][0] == "X" and triliza[2][0] == "X":
+            elif tictactoe[0][0] == "X" and tictactoe[1][0] == "X" and tictactoe[2][0] == "X":
                 print("Player 2 has won!")
                 quit()
-            elif triliza[0][1] == "X" and triliza[1][1] == "X" and triliza[1][2] == "X":
+            elif tictactoe[0][1] == "X" and tictactoe[1][1] == "X" and tictactoe[1][2] == "X":
                 print("Player 2 has won!")
                 quit()
-            elif triliza[0][2] == "X" and triliza[2][1] == "X" and triliza[2][2] == "X":
+            elif tictactoe[0][2] == "X" and tictactoe[2][1] == "X" and tictactoe[2][2] == "X":
                 print("Player 2 has won!")
                 quit()
-            elif triliza[0][0] == "X" and triliza[1][1] == "X" and triliza[2][2] == "X":
+            elif tictactoe[0][0] == "X" and tictactoe[1][1] == "X" and tictactoe[2][2] == "X":
                 print("Player 2 has won!")
                 quit()
-            elif triliza[0][2] == "X" and triliza[1][1] == "X" and triliza[2][0] == "X":
+            elif tictactoe[0][2] == "X" and tictactoe[1][1] == "X" and tictactoe[2][0] == "X":
                 print("Player 2 has won!")
                 quit()
             break
-        elif triliza[row][column] != " ":
+        elif tictactoe[row][column] != " ":
             print("Try a different one!")
             times -= 1
             continue
